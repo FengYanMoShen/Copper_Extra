@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "copper_extra",
+  "version": "0.0.5",
+
+  "name": "Copper Extra",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "FengYanMoShen"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/Copper_Extra/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.fabricmc.example.Copper_Extra"
+    ]
+  },
+  "mixins": [
+    "Copper_Extra.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
