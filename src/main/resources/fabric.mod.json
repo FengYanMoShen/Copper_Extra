@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "copper_extra",
-  "version": "0.0.5",
+  "version": "0.0.6",
 
   "name": "Copper Extra",
   "description": "This is an example description! Tell everyone what your mod is about!",
@@ -14,7 +14,7 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/Copper_Extra/icon.png",
+  "icon": "assets/copper_extra/icon.png",
 
   "environment": "*",
   "entrypoints": {
