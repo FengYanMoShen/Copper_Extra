@@ -17,14 +17,16 @@ public class Copper_Extra implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("Copper_Extra");
 
 
-	/*public static ToolItem POTATO_SHOVEL = new ShovelItem(CopperToolMaterial.INSTANCE, 1.5F, -3.0F, new Item.Settings());
+/*
+	public static ToolItem POTATO_SHOVEL = new ShovelItem(CopperToolMaterial.INSTANCE, 1.5F, -3.0F, new Item.Settings());
 	public static ToolItem POTATO_SWORD = new SwordItem(CopperToolMaterial.INSTANCE, 3, -2.4F, new Item.Settings());
 //implements ToolMaterial
 	public static  Copper_Sword implements ToolMaterial=
 			Registry.register(Registries.ITEM, new Identifier("copper_extra", "copper_sword"),
-					new Item(new FabricItemSettings()));*/
+					new Item(new FabricItemSettings()));
+*/
 
-	public class CopperToolMaterial implements ToolMaterial {
+	public static class CopperToolMaterial implements ToolMaterial {
 		public static final CopperToolMaterial INSTANCE = new CopperToolMaterial();
 
 		@Override
@@ -65,26 +67,24 @@ public class Copper_Extra implements ModInitializer {
 
 
 
-/*
-	public class CopperAxeItem extends PickaxeItem {
+	public static class CopperAxeItem extends PickaxeItem {
 		public CopperAxeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
 			super(material, attackDamage, attackSpeed, settings);
 		}
 	}
-	public class CopperPickaxeItem extends PickaxeItem {
+	public static class CopperPickaxeItem extends PickaxeItem {
 		public CopperPickaxeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
 			super(material, attackDamage, attackSpeed, settings);
 		}
 	}
-	public class CopperHoeItem extends PickaxeItem {
+	public static class CopperHoeItem extends PickaxeItem {
 		public CopperHoeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
 			super(material, attackDamage, attackSpeed, settings);
 		}
 	}
-	public ToolItem Copper_Pickaxe = new CopperPickaxeItem(CopperToolMaterial.INSTANCE, 1, -2.8F, new Item.Settings());
-	public ToolItem Copper_Axe = new CopperAxeItem(CopperToolMaterial.INSTANCE, 7, -3.2F, new Item.Settings());
-	public ToolItem Copper_Hoe = new CopperHoeItem(CopperToolMaterial.INSTANCE, 7, -3.2F, new Item.Settings());
-*/
+	public static ToolItem Copper_Pickaxe = new CopperPickaxeItem(CopperToolMaterial.INSTANCE, 1, -2.8F, new Item.Settings());
+	public static ToolItem Copper_Axe = new CopperAxeItem(CopperToolMaterial.INSTANCE, 7, -3.2F, new Item.Settings());
+	public static ToolItem Copper_Hoe = new CopperHoeItem(CopperToolMaterial.INSTANCE, 7, -3.2F, new Item.Settings());
 
 /*
 	public static final Item Copper_Sword =
